@@ -23,4 +23,3 @@ La primera prueba renueva del 8 al 15 de octubre de 2026. La segunda comprueba e
 - `evidencia/ejecucion.txt`: salida real de las pruebas.
 
 Libro–Ejemplar se representa con agregación bajo el supuesto de que retirar la ficha del catálogo no destruye los ejemplares físicos. Cada ejemplar registrado sigue vinculado a un único libro. Las reservas solo se incluyen en el diseño; su implementación queda fuera del fragmento solicitado.
-

@@ -1,0 +1,14 @@
+Fecha de ejecucion: 2026-09-30
+Bibliotecario: Luis
+Prueba 1: renovacion valida
+Notificacion para Ana: Su prestamo fue renovado.
+Fecha anterior: 2026-10-08
+Fecha de renovacion: 2026-09-30
+Nueva fecha: 2026-10-15
+Cantidad de renovaciones: 1
+Prueba 2: renovacion invalida
+Intento 2026-10-15: La nueva fecha debe ser posterior a la fecha prevista vigente.
+Intento 2026-10-14: La nueva fecha debe ser posterior a la fecha prevista vigente.
+Fecha despues de los rechazos: 2026-10-15
+Renovaciones despues de los rechazos: 1
+Resultado: pruebas correctas.

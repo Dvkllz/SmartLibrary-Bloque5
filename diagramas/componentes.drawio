@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram name="componentes">
+    <mxGraphModel dx="1300" dy="770" grid="1" page="1" pageWidth="1300" pageHeight="770">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="usuarios" value="&lt;b&gt;Gestión de Usuarios&lt;/b&gt;" style="shape=component;align=center;fontSize=22;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="40" width="450" height="140" />
+        </mxCell>
+        <mxCell id="catalogo" value="&lt;b&gt;Gestión de Catálogo&lt;/b&gt;" style="shape=component;align=center;fontSize=22;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="810" y="40" width="450" height="140" />
+        </mxCell>
+        <mxCell id="prestamos" value="&lt;b&gt;Gestión de Préstamos&lt;/b&gt;" style="shape=component;align=center;fontSize=22;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="570" width="450" height="140" />
+        </mxCell>
+        <mxCell id="reservas" value="&lt;b&gt;Gestión de Reservas&lt;/b&gt;" style="shape=component;align=center;fontSize=22;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="810" y="570" width="450" height="140" />
+        </mxCell>
+        <mxCell id="e3" source="prestamos" target="usuarios" value="" style="html=1;fontSize=20;endArrow=open;dashed=1;exitX=0.24444444444444444;exitY=0.0;entryX=0.24444444444444444;entryY=1.0;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l4" value="identificar estudiante" style="text;html=1;strokeColor=none;fillColor=none;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="170" y="245" width="190" height="30" />
+        </mxCell>
+        <mxCell id="e5" source="reservas" target="catalogo" value="" style="html=1;fontSize=20;endArrow=open;dashed=1;exitX=0.7111111111111111;exitY=0.0;entryX=0.7111111111111111;entryY=1.0;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l6" value="consultar libro" style="text;html=1;strokeColor=none;fillColor=none;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="900" y="265" width="190" height="30" />
+        </mxCell>
+        <mxCell id="e7" source="prestamos" target="catalogo" value="" style="html=1;fontSize=20;endArrow=open;dashed=1;exitX=1.0;exitY=0.2857142857142857;entryX=0.08888888888888889;entryY=1.0;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="690" y="465" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l8" value="consultar ejemplar" style="text;html=1;strokeColor=none;fillColor=none;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="412" y="460" width="190" height="30" />
+        </mxCell>
+        <mxCell id="e9" source="reservas" target="usuarios" value="" style="html=1;fontSize=20;endArrow=open;dashed=1;exitX=0.0;exitY=0.2857142857142857;entryX=0.9111111111111111;entryY=1.0;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="640" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l10" value="identificar solicitante" style="text;html=1;strokeColor=none;fillColor=none;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="398" y="330" width="190" height="30" />
+        </mxCell>
+        <mxCell id="e11" source="reservas" target="prestamos" value="" style="html=1;fontSize=20;endArrow=open;dashed=1;exitX=0.0;exitY=0.6428571428571429;entryX=1.0;entryY=0.6428571428571429;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l12" value="consultar disponibilidad" style="text;html=1;strokeColor=none;fillColor=none;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="528" y="684" width="190" height="30" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

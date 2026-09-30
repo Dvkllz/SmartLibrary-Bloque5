@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram name="clases">
+    <mxGraphModel dx="1400" dy="1460" grid="1" page="1" pageWidth="1400" pageHeight="1460">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="usuario" value="&lt;b&gt;Usuario&lt;br&gt;«abstract»&lt;/b&gt;&lt;hr&gt;- identificacion: String&lt;br&gt;- nombre: String&lt;br&gt;- correo: String&lt;hr&gt;+ getNombre(): String" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fontSize=22;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="460" y="20" width="390" height="236" />
+        </mxCell>
+        <mxCell id="notificable" value="&lt;b&gt;«interface»&lt;br&gt;Notificable&lt;/b&gt;&lt;hr&gt;+ notificar(mensaje: String): void" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fontSize=22;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="970" y="30" width="390" height="128" />
+        </mxCell>
+        <mxCell id="estudiante" value="&lt;b&gt;Estudiante&lt;/b&gt;&lt;hr&gt;- codigoEstudiantil: String&lt;br&gt;- programaAcademico: String&lt;hr&gt;+ notificar(mensaje: String): void" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fontSize=22;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="330" width="400" height="180" />
+        </mxCell>
+        <mxCell id="bibliotecario" value="&lt;b&gt;Bibliotecario&lt;/b&gt;&lt;hr&gt;- codigoEmpleado: String&lt;br&gt;- turno: String" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fontSize=22;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="500" y="330" width="360" height="132" />
+        </mxCell>
+        <mxCell id="prestamo" value="&lt;b&gt;Prestamo&lt;/b&gt;&lt;hr&gt;- fechaPrevistaDevolucion: LocalDate&lt;br&gt;- renovaciones: List&amp;lt;Renovacion&amp;gt;&lt;hr&gt;+ renovar(nuevaFecha: LocalDate): void" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fontSize=22;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="700" width="480" height="180" />
+        </mxCell>
+        <mxCell id="renovacion" value="&lt;b&gt;Renovacion&lt;/b&gt;&lt;hr&gt;- fechaRenovacion: LocalDate&lt;br&gt;- fechaAnterior: LocalDate&lt;br&gt;- nuevaFecha: LocalDate" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fontSize=22;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="860" y="730" width="460" height="162" />
+        </mxCell>
+        <mxCell id="ejemplar" value="&lt;b&gt;Ejemplar&lt;/b&gt;&lt;hr&gt;- codigo: String" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fontSize=22;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="1090" width="350" height="102" />
+        </mxCell>
+        <mxCell id="libro" value="&lt;b&gt;Libro&lt;/b&gt;&lt;hr&gt;- isbn: String&lt;br&gt;- titulo: String" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fontSize=22;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="540" y="1090" width="370" height="132" />
+        </mxCell>
+        <mxCell id="reserva" value="&lt;b&gt;Reserva&lt;/b&gt;&lt;hr&gt;- fechaReserva: LocalDate" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;fontSize=22;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1040" y="1100" width="310" height="102" />
+        </mxCell>
+        <mxCell id="e3" source="estudiante" target="usuario" value="" style="html=1;fontSize=20;endArrow=block;endFill=0;exitX=0.475;exitY=0.0;entryX=0.3333333333333333;entryY=1.0;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="230" y="280" />
+              <mxPoint x="590" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" source="bibliotecario" target="usuario" value="" style="html=1;fontSize=20;endArrow=block;endFill=0;exitX=0.5;exitY=0.0;entryX=0.5641025641025641;entryY=1.0;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" source="estudiante" target="notificable" value="" style="html=1;fontSize=20;endArrow=block;endFill=0;dashed=1;exitX=0.95;exitY=0.0;entryX=0.0;entryY=0.546875;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="420" y="10" />
+              <mxPoint x="940" y="10" />
+              <mxPoint x="940" y="100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l6" value="realización" style="text;html=1;strokeColor=none;fillColor=none;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="915" y="190" width="190" height="30" />
+        </mxCell>
+        <mxCell id="e7" source="estudiante" target="prestamo" value="" style="html=1;fontSize=20;endArrow=none;exitX=0.475;exitY=1.0;entryX=0.3958333333333333;entryY=0.0;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l8" value="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="245" y="538" width="190" height="30" />
+        </mxCell>
+        <mxCell id="l9" value="0..*" style="text;html=1;strokeColor=none;fillColor=none;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="245" y="656" width="190" height="30" />
+        </mxCell>
+        <mxCell id="e10" source="prestamo" target="renovacion" value="" style="html=1;fontSize=20;startArrow=diamond;startFill=1;endArrow=none;exitX=1.0;exitY=0.5555555555555556;entryX=0.0;entryY=0.43209876543209874;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l11" value="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="536" y="815" width="190" height="30" />
+        </mxCell>
+        <mxCell id="l12" value="0..*" style="text;html=1;strokeColor=none;fillColor=none;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="799" y="815" width="190" height="30" />
+        </mxCell>
+        <mxCell id="l13" value="historial" style="text;html=1;strokeColor=none;fillColor=none;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="601" y="764" width="190" height="30" />
+        </mxCell>
+        <mxCell id="e14" source="prestamo" target="ejemplar" value="" style="html=1;fontSize=20;endArrow=none;exitX=0.3333333333333333;exitY=1.0;entryX=0.45714285714285713;entryY=0.0;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l15" value="0..*" style="text;html=1;strokeColor=none;fillColor=none;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="215" y="920" width="190" height="30" />
+        </mxCell>
+        <mxCell id="l16" value="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="215" y="1043" width="190" height="30" />
+        </mxCell>
+        <mxCell id="e17" source="libro" target="ejemplar" value="" style="html=1;fontSize=20;startArrow=diamond;startFill=0;endArrow=none;exitX=0.0;exitY=0.45454545454545453;entryX=1.0;entryY=0.5882352941176471;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l18" value="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="482" y="1170" width="190" height="30" />
+        </mxCell>
+        <mxCell id="l19" value="0..*" style="text;html=1;strokeColor=none;fillColor=none;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="404" y="1170" width="190" height="30" />
+        </mxCell>
+        <mxCell id="e20" source="estudiante" target="reserva" value="" style="html=1;fontSize=20;endArrow=none;exitX=0.0;exitY=0.5166666666666667;entryX=0.4838709677419355;entryY=1.0;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="16" y="423" />
+              <mxPoint x="16" y="1320" />
+              <mxPoint x="1190" y="1320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l21" value="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="22" y="448" width="190" height="30" />
+        </mxCell>
+        <mxCell id="l22" value="0..*" style="text;html=1;strokeColor=none;fillColor=none;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1210" y="1247" width="190" height="30" />
+        </mxCell>
+        <mxCell id="l23" value="solicita" style="text;html=1;strokeColor=none;fillColor=none;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="515" y="1327" width="190" height="30" />
+        </mxCell>
+        <mxCell id="e24" source="libro" target="reserva" value="" style="html=1;fontSize=20;endArrow=none;exitX=1.0;exitY=0.5681818181818182;entryX=0.0;entryY=0.6372549019607843;" edge="1" parent="1">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l25" value="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="920" y="1184" width="190" height="30" />
+        </mxCell>
+        <mxCell id="l26" value="0..*" style="text;html=1;strokeColor=none;fillColor=none;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="980" y="1184" width="190" height="30" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
