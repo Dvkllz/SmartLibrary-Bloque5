@@ -1,0 +1,19 @@
+Prueba de la interfaz Swing de SmartLibrary
+Fecha: 2026-09-30
+
+Se abrió la ventana SmartLibrary — Renovación de préstamos.
+Estado inicial: devolución 2026-10-08, historial vacío.
+
+1. Se pulsó Renovar con la fecha 2026-10-15.
+   Resultado: devolución 2026-10-15, una renovación registrada.
+   La tabla mostró fecha de renovación 2026-09-30, anterior 2026-10-08
+   y nueva fecha 2026-10-15. El aviso de notificación apareció en la ventana.
+   Captura: interfaz_valida.png.
+
+2. Se pulsó Renovar nuevamente con la misma fecha 2026-10-15.
+   Resultado: renovación rechazada. La devolución siguió en 2026-10-15
+   y el historial mantuvo una sola entrada.
+   Captura: interfaz_invalida.png.
+
+La prueba de consola comprueba además el rechazo de una fecha anterior
+(2026-10-14). Su salida está en ejecucion.txt.

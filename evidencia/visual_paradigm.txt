@@ -1,0 +1,6 @@
+Diagramas guardados y exportados desde Visual Paradigm Online el 30 de septiembre de 2026.
+
+Clases: https://online.visual-paradigm.com/app/diagrams/#diagram:workspace=vrslgbij&proj=0&id=2
+Componentes: https://online.visual-paradigm.com/app/diagrams/#diagram:workspace=vrslgbij&proj=0&id=1
+
+Las exportaciones PNG y SVG están en diagramas. Los rótulos de los cuatro componentes se corrigieron en el editor y se guardaron en el proyecto.
